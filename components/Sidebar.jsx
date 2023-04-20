@@ -8,7 +8,7 @@ import { FiSettings } from "react-icons/fi";
 const Sidebar = ({ children }) => {
   return (
     <div className="flex">
-      <div className="fixed w-20 h-screen p-4 bg-white border-r-[1px] flex flex-col justify-between">
+      <div className="fixed w-20 h-screen p-4 bg-white border-r-[1px] sm:flex flex-col justify-between hidden">
         <div className="flex flex-col items-center">
           <Link href="/">
             <div className="bg-[#282828] text-white p-3 rounded-lg inline-block">
@@ -38,7 +38,7 @@ const Sidebar = ({ children }) => {
           </Link>
         </div>
       </div>
-      <main className="ml-20 w-full">{children}</main>
+      <main className="sm:ml-20 ml-0 w-full">{children}</main>
     </div>
   );
 };
